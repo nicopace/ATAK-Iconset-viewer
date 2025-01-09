@@ -18,7 +18,8 @@
     "tslib": "^2.7.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.2",
-    "vite-plugin-pwa": "^0.19.2"
+    "vite-plugin-pwa": "^0.19.2",
+    "vite-plugin-copy": "^0.1.6"
   },
   "dependencies": {
     "sql.js": "^1.10.2"
