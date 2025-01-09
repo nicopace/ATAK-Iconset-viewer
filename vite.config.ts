@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { VitePWA } from 'vite-plugin-pwa'
+import { copy } from 'vite-plugin-copy'
 
 export default defineConfig({
   plugins: [
@@ -20,6 +21,11 @@ export default defineConfig({
           }
         ]
       }
+    }),
+    copy({
+      targets: [
+        { src: 'public/iconsets.sqlite', dest: 'dist' }
+      ]
     })
   ]
 })
